@@ -4,8 +4,8 @@ const products = [
     {
         id: 1,
         name: "Polangui Kalamay",
-        image: "kalamay.jpg",
-        fallbackImage: "../KALAMAY SMALL.jpg",
+        image: "images/polangui-kalamay.jpg",
+        fallbackImage: "images/polangui-kalamay.jpg",
         alt: "Polangui kalamay in traditional wrapping",
         description: "A traditional Polangui delicacy made from sugarcane (tubo). Naturally sweet with a distinctive texture.",
         variants: [
@@ -16,8 +16,8 @@ const products = [
     {
         id: 2,
         name: "Coconut Tarts",
-        image: "coconut-tarts.jpg",
-        fallbackImage: "../COCONUT MACAROONS.jpg",
+        image: "images/coconut-tarts.jpg",
+        fallbackImage: "images/coconut-tarts.jpg",
         alt: "A selection of coconut tarts",
         description: "Baked pastries with sweet coconut filling inside a buttery golden crust.",
         variants: [
@@ -28,8 +28,8 @@ const products = [
     {
         id: 3,
         name: "Coconut Macaroons",
-        image: "coconut-macaroons.jpg",
-        fallbackImage: "../COCONUT MACAROONS.jpg",
+        image: "images/coconut-macaroons.jpg",
+        fallbackImage: "images/coconut-macaroons.jpg",
         alt: "Freshly baked coconut macaroons",
         description: "Sweet coconut treats with a soft, chewy center and lightly golden exterior.",
         variants: [
@@ -40,8 +40,8 @@ const products = [
     {
         id: 4,
         name: "Pili Nut Candies",
-        image: "pili-nut-candies.jpg",
-        fallbackImage: "../PILI CANDIES.jpg",
+        image: "images/pili-nut-candies.jpg",
+        fallbackImage: "images/pili-nut-candies.jpg",
         alt: "Sweet pili nut candies",
         description: "Sweet pili nut candies with a balance of nutty richness and caramel sweetness.",
         variants: [
@@ -52,8 +52,8 @@ const products = [
     {
         id: 5,
         name: "Bicol Tablea",
-        image: "bicol-tablea.jpg",
-        fallbackImage: "../TABLEA.jpg",
+        image: "images/bicol-tablea.jpg",
+        fallbackImage: "images/bicol-tablea.jpg",
         alt: "Traditional Bicol tablea cacao products",
         description: "Traditional chocolate tablets made from roasted cacao beans.",
         variants: [
@@ -64,8 +64,8 @@ const products = [
     {
         id: 6,
         name: "Salabat",
-        image: "salabat.jpg",
-        fallbackImage: "../SALABAT.jpg",
+        image: "images/salabat.jpg",
+        fallbackImage: "images/salabat.jpg",
         alt: "Salabat ginger drink mix",
         description: "Traditional ginger drink known for its warm, aromatic flavor.",
         variants: [
@@ -76,8 +76,8 @@ const products = [
     {
         id: 7,
         name: "Mascobado Sugar",
-        image: "mascobado-sugar.jpg",
-        fallbackImage: "../MUSCUVADO.jpg",
+        image: "images/mascobado-sugar.jpg",
+        fallbackImage: "images/mascobado-sugar.jpg",
         alt: "Local mascobado sugar",
         description: "Natural unrefined sugar with rich molasses-like flavor.",
         variants: [
@@ -88,8 +88,8 @@ const products = [
     {
         id: 8,
         name: "Ginataang Santol",
-        image: "ginataang-santol.jpg",
-        fallbackImage: "../SANTOL.jpg",
+        image: "images/ginataang-santol.jpg",
+        fallbackImage: "images/ginataang-santol.jpg",
         alt: "Ginataang santol",
         description: "Santol cooked in coconut milk with chili and seasonings.",
         variants: [
@@ -100,8 +100,8 @@ const products = [
     {
         id: 9,
         name: "Boneless Dilis",
-        image: "boneless-dilis.jpg",
-        fallbackImage: "../BONELESS DILIS.jpg",
+        image: "images/boneless-dilis.jpg",
+        fallbackImage: "images/boneless-dilis.jpg",
         alt: "Boneless dilis anchovies",
         description: "Savory deboned anchovies perfect as snack or rice partner.",
         variants: [
@@ -112,8 +112,8 @@ const products = [
     {
         id: 10,
         name: "Laing",
-        image: "laing.jpg",
-        fallbackImage: "../LAING.jpg",
+        image: "images/laing.jpg",
+        fallbackImage: "images/laing.jpg",
         alt: "Bicol laing",
         description: "Bicol’s famous creamy and spicy taro leaf dish cooked in coconut milk.",
         variants: [
@@ -124,8 +124,8 @@ const products = [
     {
         id: 11,
         name: "Bicol Express",
-        image: "bicol-express.jpg",
-        fallbackImage: "../BICOL EXPRESS.jpg",
+        image: "images/bicol-express.jpg",
+        fallbackImage: "images/bicol-express.jpg",
         alt: "Bicol Express",
         description: "Pork simmered in coconut milk, chili, shrimp paste, and spices.",
         variants: [
@@ -136,8 +136,8 @@ const products = [
     {
         id: 12,
         name: "Pili Tart",
-        image: "pili-tart.jpg",
-        fallbackImage: "../PILI TARTS.jpg",
+        image: "images/pili-tart.jpg",
+        fallbackImage: "images/pili-tart.jpg",
         alt: "Pili tarts",
         description: "Buttery crisp tart filled with sweet and flavorful pili nuts.",
         variants: [
@@ -148,8 +148,8 @@ const products = [
     {
         id: 13,
         name: "Pili Candy",
-        image: "pili-candy.jpg",
-        fallbackImage: "../PILI CANDIES.jpg",
+        image: "images/pili-candy.jpg",
+        fallbackImage: "images/pili-candy.jpg",
         alt: "Pili candy",
         description: "Pili nuts coated in caramelized sugar for a sweet crunchy treat.",
         variants: [
@@ -160,8 +160,8 @@ const products = [
     {
         id: 14,
         name: "Sinarapan",
-        image: "sinarapan.jpg",
-        fallbackImage: "../DRIED SINARAPAN.jpg",
+        image: "images/sinarapan.jpg",
+        fallbackImage: "images/sinarapan.jpg",
         alt: "Dried sinarapan",
         description: "Tiny freshwater fish known for delicate flavor, used in traditional dishes.",
         variants: [
@@ -175,6 +175,7 @@ const products = [
 const STORE_KEY = "polangui-pasalubong-store";
 const THEME_KEY = "darkMode";
 const LEGACY_THEME_KEY = "polangui-pasalubong-theme";
+const ORDER_ENDPOINT = "https://script.google.com/macros/s/AKfycbw64rWPdT4cCyxV_yragQgGsIgarqCxJMMtXjIp8eEKkYGx4ibig3XpprU3LcxKHvxn/exec";
 const PAYMENT_METHODS = {
     GCash: "GCash",
     COD: "Cash on Delivery",
@@ -605,7 +606,7 @@ function updatePaymentDetails() {
         PAYMENT_METHODS[method] || "Choose a method";
 }
 
-function submitOrder(event) {
+async function submitOrder(event) {
     event.preventDefault();
     const form = event.currentTarget;
     if (!form.reportValidity()) return;
@@ -645,10 +646,44 @@ function submitOrder(event) {
         createdAt: new Date().toISOString()
     };
 
+    const submitButton = form.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    submitButton.setAttribute("aria-busy", "true");
+
+    try {
+        const response = await fetch(ORDER_ENDPOINT, {
+            method: "POST",
+            headers: { "Content-Type": "text/plain;charset=UTF-8" },
+            body: JSON.stringify(order)
+        });
+        if (!response.ok) {
+            throw new Error(`The order service responded with HTTP ${response.status}.`);
+        }
+
+        const responseBody = await response.text();
+        const contentType = response.headers.get("content-type") || "";
+        if (responseBody && (contentType.includes("application/json") || responseBody.trim().startsWith("{"))) {
+            const result = JSON.parse(responseBody);
+            if (!result || typeof result !== "object" || Array.isArray(result)) {
+                throw new Error("The order service returned an invalid response.");
+            }
+            if (result.success === false || result.ok === false || result.status === "error") {
+                throw new Error(typeof result.message === "string" ? result.message : "The order service rejected the order.");
+            }
+        }
+    } catch (error) {
+        console.error("Could not confirm order submission.", error);
+        showStatus(`We could not confirm whether your order was received (${error.message}). Your cart is unchanged. Check with the shop before trying again.`);
+        return;
+    } finally {
+        submitButton.disabled = false;
+        submitButton.removeAttribute("aria-busy");
+    }
+
     const completedStore = { cart: [], lastOrder: order };
-    if (!saveStore(completedStore)) return;
     store.cart = [];
     store.lastOrder = order;
+    saveStore(completedStore);
     form.reset();
     renderCheckoutPage();
     updateCartBadges();
