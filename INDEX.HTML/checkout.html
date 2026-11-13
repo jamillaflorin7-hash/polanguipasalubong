@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f3e9">
+    <meta name="description" content="Provide your contact details and choose a payment method for your Polangui Pasalubong order.">
+    <title>Checkout | Polangui Pasalubong</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="announcement">A little taste of Bicol, made with care in Polangui</div>
+
+    <header class="site-header">
+        <nav class="nav-wrap" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-label="Polangui Pasalubong home">
+                <img class="brand-mark" src="../840462672_1615141743958207_6699066942657185424_n.jpg" alt="">
+                <span class="brand-copy">
+                    <strong>Polangui Pasalubong</strong>
+                    <span>Albay · Bicol</span>
+                </span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span data-cart-count>0</span>)</a></li>
+                <li><a href="checkout.html" aria-current="page">Checkout</a></li>
+                <li><button class="theme-toggle" id="darkModeBtn" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span id="dark-icon" aria-hidden="true">🌙</span></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <div class="page-heading">
+            <p class="eyebrow">Almost there</p>
+            <h1>Checkout</h1>
+            <p>Share your contact details and choose how you would like to pay for your order.</p>
+        </div>
+
+        <section class="empty-state" id="checkoutEmpty" hidden>
+            <h2>No items to check out yet.</h2>
+            <p>Choose your Bicolano favorites before placing an order.</p>
+            <a class="button" href="products.html">Browse products</a>
+        </section>
+
+        <section class="confirmation-card" id="orderConfirmation" aria-labelledby="confirmationTitle" hidden>
+            <p class="eyebrow">Order received</p>
+            <h2 id="confirmationTitle">Thank you for your order!</h2>
+            <p>Your order details are saved in this browser. The shop can confirm payment or pickup arrangements and any delivery fee with you.</p>
+            <div class="receipt-details" id="receiptDetails"></div>
+            <h3>Order items</h3>
+            <ul class="receipt-items" id="receiptItems"></ul>
+            <p class="summary-total"><span>Order subtotal</span><strong id="receiptTotal">₱0</strong></p>
+            <a class="button" href="products.html">Continue shopping</a>
+        </section>
+
+        <div class="checkout-layout" id="checkoutLayout" hidden>
+            <form class="form-card" id="checkoutForm">
+                <h2>Contact and delivery details</h2>
+                <div class="form-grid">
+                    <div class="form-field form-field-full">
+                        <label for="customerName">Full name</label>
+                        <input class="form-control" id="customerName" name="name" autocomplete="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="customerPhone">Mobile number</label>
+                        <input class="form-control" id="customerPhone" name="phone" type="tel" autocomplete="tel" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="customerEmail">Email <span>(optional)</span></label>
+                        <input class="form-control" id="customerEmail" name="email" type="email" autocomplete="email">
+                    </div>
+                    <div class="form-field form-field-full">
+                        <h3>Payment options</h3>
+                        <label for="payment-method">Select payment method</label>
+                        <select class="form-control" id="payment-method" name="paymentMethod" required>
+                            <option value="">-- Choose Payment Method --</option>
+                            <option value="GCash">GCash</option>
+                            <option value="COD">Cash on Delivery</option>
+                            <option value="Bank Transfer">Bank Transfer</option>
+                            <option value="Pickup">Pay Upon Pickup</option>
+                        </select>
+                        <div class="payment-details" id="payment-details" aria-live="polite"></div>
+                    </div>
+                    <div class="form-field form-field-full" id="deliveryAddressField">
+                        <label for="deliveryAddress">Complete delivery address</label>
+                        <textarea class="form-control" id="deliveryAddress" name="address" autocomplete="street-address" placeholder="House or unit, street, barangay, town/city, province" required></textarea>
+                    </div>
+                    <div class="form-field form-field-full">
+                        <label for="orderNotes" id="orderNotesLabel">Delivery or pickup notes <span>(optional)</span></label>
+                        <textarea class="form-control" id="orderNotes" name="notes" placeholder="Landmarks or other helpful instructions"></textarea>
+                    </div>
+                </div>
+
+                <p class="form-note">Your order is stored only in this browser. This demo storefront does not process payments or send order details to the shop.</p>
+                <button class="button" type="submit">Place order</button>
+            </form>
+
+            <aside class="summary-card" id="checkoutSummary" aria-label="Order summary">
+                <h2>Your order</h2>
+                <div data-summary-items></div>
+                <p class="summary-total"><span>Subtotal</span><span data-summary-total>₱0</span></p>
+                <p class="summary-line" data-summary-payment><span>Payment</span><strong id="checkout-payment-summary">Choose a method</strong></p>
+                <p class="summary-note">Delivery fee, if applicable, will be confirmed when your order is arranged.</p>
+            </aside>
+        </div>
+    </main>
+
+    <div class="site-status" id="siteStatus" role="status" aria-live="polite" hidden></div>
+    <footer><p>© 2026 Polangui Pasalubong · Polangui, Albay</p></footer>
+</body>
+</html>

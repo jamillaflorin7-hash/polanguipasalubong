@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f3e9">
+    <meta name="description" content="Discover Polangui kalamay and Bicolano pasalubong, proudly made in Albay.">
+    <title>Polangui Pasalubong | A Taste of Bicol</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="announcement">A little taste of Bicol, made with care in Polangui</div>
+
+    <header class="site-header">
+        <nav class="nav-wrap" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-label="Polangui Pasalubong home">
+                <img class="brand-mark" src="../840462672_1615141743958207_6699066942657185424_n.jpg" alt="">
+                <span class="brand-copy">
+                    <strong>Polangui Pasalubong</strong>
+                    <span>Albay · Bicol</span>
+                </span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span data-cart-count>0</span>)</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><button class="theme-toggle" id="darkModeBtn" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span id="dark-icon" aria-hidden="true">🌙</span></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">A beloved Bicolano delicacy</p>
+                <h1 id="hero-title">Authentic Bicolano <em>delicacies.</em></h1>
+                <p>Bringing the taste of Polangui to every home. Discover our signature kalamay and well-loved local treats, made for sharing and taking home.</p>
+                <div class="hero-actions">
+                    <a class="button" href="products.html">Shop our treats</a>
+                    <a class="button button-secondary" href="#our-story">Our story</a>
+                </div>
+            </div>
+            <div class="hero-visual" role="img" aria-label="Traditional kalamay, a Bicolano delicacy">
+                <div class="hero-photo">
+                    <img src="kalamay.jpg" alt="Traditional kalamay wrapped and ready to share">
+                </div>
+                <div class="hero-caption">
+                    <span>From Polangui, with love</span>
+                    <strong>A little taste of home</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-strip" id="our-story" aria-labelledby="story-title">
+            <div class="story-inner">
+                <p><strong id="story-title">Made with care.</strong> Rooted in Bicolano tradition and local pride.</p>
+                <p>Polangui, Albay · Proudly made in Bicol</p>
+            </div>
+        </section>
+
+        <section class="featured-section" aria-labelledby="featured-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">A few local favorites</p>
+                    <h2 id="featured-title">Featured products</h2>
+                </div>
+                <a href="products.html">See all products →</a>
+            </div>
+            <div class="product-grid" id="featuredProducts" aria-live="polite"></div>
+        </section>
+
+        <section class="closing">
+            <p class="eyebrow">From our home to yours</p>
+            <h2>Share a little Bicol.</h2>
+            <p>Find a favorite for your table, or a pasalubong for someone you love.</p>
+        </section>
+    </main>
+
+    <dialog id="product-modal" class="product-modal" aria-labelledby="modal-name" aria-describedby="modal-desc">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" type="button" aria-label="Close product details">×</button>
+            <img id="modal-img" alt="" hidden>
+            <p class="eyebrow">A taste of Bicol</p>
+            <h2 id="modal-name"></h2>
+            <p id="modal-desc"></p>
+            <p class="variant-field" id="modal-variant-label">Choose a size to add to your cart</p>
+            <div class="variant-options" id="modal-variants" role="group" aria-labelledby="modal-variant-label"></div>
+        </div>
+    </dialog>
+
+    <div class="site-status" id="siteStatus" role="status" aria-live="polite" hidden></div>
+    <footer><p>© 2026 Polangui Pasalubong · Polangui, Albay</p></footer>
+</body>
+</html>

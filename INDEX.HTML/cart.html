@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f3e9">
+    <meta name="description" content="Review and update your Polangui Pasalubong cart.">
+    <title>Your Cart | Polangui Pasalubong</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="announcement">A little taste of Bicol, made with care in Polangui</div>
+
+    <header class="site-header">
+        <nav class="nav-wrap" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-label="Polangui Pasalubong home">
+                <img class="brand-mark" src="../840462672_1615141743958207_6699066942657185424_n.jpg" alt="">
+                <span class="brand-copy">
+                    <strong>Polangui Pasalubong</strong>
+                    <span>Albay · Bicol</span>
+                </span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html" aria-current="page">Cart (<span data-cart-count>0</span>)</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><button class="theme-toggle" id="darkModeBtn" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span id="dark-icon" aria-hidden="true">🌙</span></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <div class="page-heading">
+            <p class="eyebrow">Your selection</p>
+            <h1>Your cart</h1>
+            <p id="cartItemCount">0 items</p>
+        </div>
+
+        <section class="empty-state" id="cartEmpty" hidden>
+            <h2>Your cart is waiting for a treat.</h2>
+            <p>Browse our local favorites and add something delicious.</p>
+            <a class="button" href="products.html">Browse products</a>
+        </section>
+
+        <div class="cart-layout" id="cartLayout" hidden>
+            <section class="panel" aria-labelledby="cart-list-title">
+                <h2 id="cart-list-title">Items in your cart</h2>
+                <div class="cart-items" id="cartItems"></div>
+            </section>
+
+            <aside class="summary-card" id="cartSummary" aria-label="Cart summary">
+                <h2>Order summary</h2>
+                <div data-summary-items></div>
+                <p class="summary-total"><span>Subtotal</span><span data-summary-total>₱0</span></p>
+                <p class="summary-note">Delivery fee, if applicable, will be confirmed when your order is arranged.</p>
+                <a class="button" href="checkout.html">Continue to checkout</a>
+            </aside>
+        </div>
+    </main>
+
+    <div class="site-status" id="siteStatus" role="status" aria-live="polite" hidden></div>
+    <footer><p>© 2026 Polangui Pasalubong · Polangui, Albay</p></footer>
+</body>
+</html>
